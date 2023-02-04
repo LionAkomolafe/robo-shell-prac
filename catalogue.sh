@@ -13,6 +13,6 @@ npm install
 sed -i -e "s/MONGOD_DNSNAME/mongod.kingyamza.online/" systemd.service
 cd ~
 mv /home/roboshop/catalogue/systemd.service /etc/systemd/system/catalogue.service
-sudo systmectl daemon-reload
-sudo systemctl enable catalogue
-sudo systemctl start catalogue
+systmectl daemon-reload
+systemctl enable catalogue
+systemctl start catalogue

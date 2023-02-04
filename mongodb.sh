@@ -1,12 +1,12 @@
 curl -s -o /etc/yum.repos.d/mongodb.repo https://raw.githubusercontent.com/roboshop-devops-project/mongodb/main/mongo.repo
 
 yum install mongodb-org -y
-sudo systemctl enable mongod
-sudo systemctl start mongod
+systemctl enable mongod
+systemctl start mongod
 
 sed -i -e "s/127.0.0.1/0.0.0.0/" /etc/mongod.conf
 
-sudo systemctl restart mongod
+systemctl restart mongod
 
 curl -s -L -o /tmp/mongodb.zip "https://github.com/roboshop-devops-project/mongodb/archive/main.zip"
 
