@@ -11,7 +11,7 @@ systemctl restart mongod
 curl -s -L -o /tmp/mongodb.zip "https://github.com/roboshop-devops-project/mongodb/archive/main.zip"
 
 cd /tmp
-unzip mongod.zip
+unzip mongodb.zip
 cd mongod-main
 mongo < catalogue.js
 mongo < users.js
