@@ -3,7 +3,7 @@ yum install nodejs -y
 
 useradd roboshop
 cd /home/roboshop
-curl -s -L -o /tmp/cart.zip "https://github.com/roboshop-devops-project/cart/archive/main.zip"
+curl -s -L -o /tmp/user.zip "https://github.com/roboshop-devops-project/user/archive/main.zip"
 rm -rf user
 unzip -o /tmp/user.zip
 mv user-main user
